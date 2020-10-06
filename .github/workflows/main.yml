@@ -22,7 +22,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Set up node js environment
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2-beta
         with:
           version: '12' 
       - name: GitHub Action for Yarn
@@ -34,7 +34,7 @@ jobs:
           cmd: install
         
       - name : creating build
-        run  :  npm run build
+        run  : CI = true npm run build
       
       - name: installing node
         run: npm install --global surge
