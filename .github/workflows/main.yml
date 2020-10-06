@@ -39,7 +39,7 @@ jobs:
       - name: installing node
         run: npm install --global surge
       - name: Deploying on surge
-        run: surge ./build/ http://abdullahrafiquereact.surge.sh/ --token {{ secrets.NEW }}
+        run: surge ./build/ http://abdullahrafiquereact.surge.sh/ --token ${{ secrets.NEW }}
       
          
          
