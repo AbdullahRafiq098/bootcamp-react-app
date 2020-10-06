@@ -34,7 +34,7 @@ jobs:
           cmd: install
         
       - name : creating build
-        run  : CI= npm run build
+        run  : CI= yarn build
       
       - name: installing node
         run: npm install --global surge
